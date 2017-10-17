@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @city.name %>
+</p>
+
+<p>
+  <strong>Country code:</strong>
+  <%= @city.country_code %>
+</p>
+
+<p>
+  <strong>Temperature:</strong>
+  <%= format_celsius @temp_min %>
+  –
+  <%= format_celsius @temp_max %>
+</p>
+
+<p>
+  <strong>Humidity:</strong>
+  <%= @humidity %>%
+</p>
+
+<p>
+  <strong>Pressure:</strong>
+  <%= @pressure %> hpa
+</p>
+
+<pre>
+  <%= @data %>
+</pre>
+
+<%= link_to 'Edit', edit_city_path(@city) %> |
+<%= link_to 'Back', cities_path %>
