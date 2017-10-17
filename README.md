@@ -1,5 +1,7 @@
 ## Getting Started
 
+Sign up to an account on https://openweathermap.org/
+
 Create a **.env** file in the project root with the following keys set:
 ```
 OPEN_WEATHER_MAP_API_KEY =
